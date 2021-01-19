@@ -1,6 +1,6 @@
 import React from 'react';
-import CityList from '../containers/city_list';
-import City from '../containers/city';
+import CityList from './city_list';
+import ActiveCity from '../containers/active_city';
 
 
 // const App = () => {
@@ -24,7 +24,7 @@ const App = () => {
     <div className="app">
       <CityList cities={cities} />
       {console.log(cities[0].name)}
-      <City selectedCity={cities[0]} />
+      <ActiveCity selectedCity={cities[0]} />
     </div>
   );
 };
